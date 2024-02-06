@@ -1,0 +1,11 @@
+<div class="productList__Item">
+    <span>{{product.name | titlecase}}</span>
+    <div class="productList__Item__Info">
+        <span>{{product.price | currency}}</span>
+        <span>{{product.quantity}} units</span>
+    </div>
+    <div class="buttonGroup">
+        <button (click)="selectProductToEdit(index)">Editar</button>
+        <button (click)="selectProductToDelete(index)">Borrar</button>
+    </div>
+</div>
